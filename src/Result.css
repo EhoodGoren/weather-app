@@ -1,9 +1,29 @@
 #result {
-    width: 15%;
+    width: 17vw;
     border-radius: 30px;
     font-size: 150%;
     text-align: center;
     background-color: #21D7D1;
     color: white;
     border: 1px blue solid;
+}
+@media only screen and (max-width: 800px) {
+    #result {
+        width: 25vw;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #result {
+        width: 30vw;
+    }
+}
+@media only screen and (max-width: 500px) {
+    #result {
+        width: 40vw;
+    }
+}
+@media only screen and (max-width: 350px) {
+    #result {
+        width: 55vw;
+    }
 }
