@@ -1,0 +1,2 @@
+#result{background-color:#21d7d1;border:1px solid blue;border-radius:30px;color:#fff;font-size:150%;text-align:center;width:17vw}@media only screen and (max-width:800px){#result{width:25vw}}@media only screen and (max-width:600px){#result{width:30vw}}@media only screen and (max-width:500px){#result{width:40vw}}@media only screen and (max-width:350px){#result{width:55vw}}#app{display:flex;flex-direction:column;justify-content:center}#app *{margin:auto}.city-input,.city-submit{font-size:large}
+/*# sourceMappingURL=main.8c51a4b6.css.map*/
