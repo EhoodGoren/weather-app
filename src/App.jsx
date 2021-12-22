@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import { connect } from "react-redux";
 import { getCityWeather } from './redux/actions/weatherActions';
+import Result from "./Result";
+import './App.css';
 
 function App(props) {
     const cityInput = useRef();
@@ -11,8 +13,9 @@ function App(props) {
 
     return (
         <div id="App">
-            <input ref={cityInput} placeholder="Enter country name" />
+            <input ref={cityInput} placeholder="Enter city name" />
             <button onClick={searchCity}>Submit</button>
+            <Result weather={props.cityWeather} iconSrc={props.iconSrc} />
         </div>
     );
 }
@@ -24,5 +27,11 @@ const mapDispatchToProps = (dispatch) => {
         }
     }
 }
+const mapStateToProps = (state) => {
+    return {
+        cityWeather: state.cityWeather,
+        iconSrc: state.iconSrc
+    }
+}
 
-export default connect(null, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);

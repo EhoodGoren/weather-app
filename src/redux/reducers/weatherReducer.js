@@ -3,12 +3,14 @@ export default function weatherReducer(state = {}, action) {
         case 'FOUND_CITY':
             return {
                 ...state,
-                cityWeather: action.weather
+                cityWeather: action.weather,
+                iconSrc: action.iconSrc
             }
         case 'CITY_NOT_FOUND':
             return {
                 ...state,
-                cityWeather: undefined
+                cityWeather: 'not found',
+                iconSrc: undefined
             }
         default:
             return state;
