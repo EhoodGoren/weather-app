@@ -7,8 +7,8 @@ function Result(props) {
         const weatherData = props.weather.data;
         return (
             <div id='result'>
-                <div className="city-name">{weatherData.name}</div>
-                <div className="temp">{weatherData.main.temp}</div>
+                <div className="city-name">{weatherData.name}</div><br />
+                <div className="temp">{weatherData.main.temp}°</div><br />
                 <div className="weather-description">{weatherData.weather[0].main}</div>
                 <img
                     alt='Weather icon'

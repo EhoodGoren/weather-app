@@ -12,9 +12,10 @@ function App(props) {
     }
 
     return (
-        <div id="App">
-            <input ref={cityInput} placeholder="Enter city name" />
-            <button onClick={searchCity}>Submit</button>
+        <div id="app">
+            <h1>City Weather</h1><br />
+            <input className="city-input" ref={cityInput} placeholder="Enter city name" /><br />
+            <button className="city-submit" onClick={searchCity}>Submit</button><br />
             <Result weather={props.cityWeather} iconSrc={props.iconSrc} />
         </div>
     );

@@ -1,0 +1,11 @@
+#app {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#app *{
+    margin: auto;
+}
+.city-input, .city-submit {
+    font-size: large;
+}

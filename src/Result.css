@@ -1,0 +1,9 @@
+#result {
+    width: 15%;
+    border-radius: 30px;
+    font-size: 150%;
+    text-align: center;
+    background-color: #21D7D1;
+    color: white;
+    border: 1px blue solid;
+}
